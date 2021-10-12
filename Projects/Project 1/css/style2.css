@@ -1,0 +1,93 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        color: rgb(255, 255, 255);
+    }
+    
+    body {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../2047279.jpg);
+        background-position: center;
+    }
+    
+    .header-container {
+        width: 85%;
+        padding: 35px 0px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*background-color: red;*/
+    }
+    
+    .website-name a {
+        text-decoration: none;
+        font-size: 50px;
+    }
+    
+    .header-sites a {
+        display: inline-block;
+        margin: 0 20px;
+        /*background-color: green;*/
+        text-decoration: none;
+        position: relative;
+    }
+    
+    .header-sites a::after {
+        content: '';
+        height: 3px;
+        width: 0%;
+        background-color: #cf4200;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: width 0.5s;
+    }
+    
+    .header-sites a:hover::after {
+        width: 100%;
+    }
+    
+    .content {
+        background-color: aqua;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: auto;
+        text-align: center;
+    }
+    
+    .content h1 {
+        font-size: 70px;
+        margin-top: 80px;
+    }
+    
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+    
+    button {
+        width: 200px;
+        padding: 10px;
+        margin: 20px 10px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 25px;
+        border: 2px solid #cf4200;
+        background: transparent;
+        cursor: pointer;
+        transition: 0.5s;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    button:hover {
+        background-color: #cf4200;
+    }
